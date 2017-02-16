@@ -21,10 +21,20 @@ Pluralsight tutorial for creating a JavaScript Development Environment
       $ rvm use ruby --install --default
 
 - Tutorial:
-  $ npm install
-  - security check:
-    $ npm install -g nsp
-    $ nsp check
-    - todo: add to nmp start
+  - package manager:
+    $ npm install
+    - security check:
+      $ npm install -g nsp
+      $ nsp check
+      - todo: add to nmp start
+  - serve with express:
+    - make sure vagrant is forwarding the correct port
+    $ node buildScripts/srcServer.js
+    - try in browser: http://localhost:3000/
+  - server externally:
+    $ npm install -g localtunnel
+    $ lt --port 3000 --subdomain aztest
+
+
 
 
